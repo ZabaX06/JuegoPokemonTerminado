@@ -1,0 +1,225 @@
+body{
+    
+    background-image: linear-gradient(160deg, #bc58ae 0%, #80D0C7 100%);
+    }
+    
+    .headerr{
+        text-align: center;
+        background-color: rgba(26, 151, 213, 0.627);
+        border-radius: 400px;
+        color: white;
+        font-family: cursive;
+    }
+    
+    .texto{
+        text-align: center;
+    }
+    
+    center{
+        margin-top: 40px;
+    }
+    
+    .logo{
+        width: 400px;
+        height: 250px;
+        border-radius: 40px;
+    }
+    
+    .boton{
+        margin-bottom: 40px;
+        bottom: unset;
+        color: #000000;
+        font-family: cursive;
+        background-color: rgba(209, 24, 52, 0.858);
+    }
+    
+    
+    .arroz{
+        color: black;
+    }
+
+
+    @import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #FF6D60;
+}
+
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.titulo {
+    color: #ffffff;
+    font-size: 50px;
+}
+
+
+.subtitulo {
+    color: #ffffff;
+    font-size: 35px;
+}
+
+
+.tarjetas, .tarjetas-ataque {
+    display: flex;
+    gap: 10px;
+}
+
+
+.tarjeta-de-materia { 
+    width: 220px;
+    height: 100px;
+    background: #236fa19f;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid rgb(255, 0, 191);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+.tarjeta-de-materia:hover {
+    width: 220px;
+    height: 100px;
+    background: #c722bfa8;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid rgb(255, 0, 119);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(148, 120, 120);
+}
+
+
+.tarjeta-de-materia img {
+    width: 80px;
+}
+
+.boton-de-mascota {
+    width: 130px;
+    height: 40px;
+    background: rgb(211, 35, 167); 
+    margin-top: 20px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 20px;
+    border: 1px solid rgb(233, 28, 89);
+    border-radius: 20px;
+    color: #ffffff;
+}
+.boton-de-mascota:hover {
+    width: 130px;
+    height: 40px;
+    background: rgba(23, 166, 202, 0.795);
+    margin-top: 20px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 20px;
+    border: 2px solid red;
+    border-radius: 20px;
+    color: #f760e3;
+}
+
+
+input{
+    display: none;
+}
+
+input:checked + label {
+    background-color: rgb(219, 104, 135);
+}
+
+#seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque { 
+    background-color: #b422c7;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 80px;
+    color: white;
+    font-family: 'Lobster Two', cursive;
+    font-size: 21px;
+    margin: 10px;
+}
+.boton-de-ataque:hover { 
+    background-color: #c029fc;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 80px;
+    color: rgb(148, 142, 142);
+    font-family: 'Lobster Two', cursive;
+    font-size: 21px;
+}
+
+#mensajes {
+    width: 280px;
+    padding: 5px;
+    background: #f529fc;
+    color: #fcfcfc;
+    margin: 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: #d929fc;
+    background-color:#6063ff;
+    font-size: 17px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#boton-reiniciar:hover {
+    border: none;
+    color: #5987bb;
+    background-color:#f080e1;
+    font-size: 17px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 150px 150px;
+
+}
+
+.parrafo {
+    color: rgb(75, 72, 72);
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 17px;
+}
+
+@media (max-width: 360px) {
+    .tarjetas, .tarjetas-ataque {
+        flex-direction: column;
+    }
+}
